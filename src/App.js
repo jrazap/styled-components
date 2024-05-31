@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Button } from "./components/Button.styled";
 import { Flex } from "./components/Flex.styled";
 import { GlobalStyles } from "./components/Global.styled";
@@ -6,6 +7,10 @@ import { Input } from "./components/Input.styled";
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Styled Components Tutorial | jrazap</title>
+      </Helmet>
+      
       <GlobalStyles />
       <div className="container">
         <h1 className="display-4 mb-5 fw-bold">Learn Styled Components</h1>
